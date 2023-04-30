@@ -1,0 +1,20 @@
+Steps I take for a terraform demo:
+
+Helpful Links:
+https://learn.microsoft.com/en-us/azure/developer/terraform/quickstart-configure
+https://learn.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-terraform
+
+
+Prep the environment:
+Terraform Install & Setup:
+1) https://learn.microsoft.com/en-us/azure/developer/terraform/quickstart-configure
+2) 
+VS Code Installed
+- VS Code Terraform Extension
+- Copilot Extension
+- Azure Account Extension
+
+Final Steps:
+1) Create a new folder for the demo
+
+
