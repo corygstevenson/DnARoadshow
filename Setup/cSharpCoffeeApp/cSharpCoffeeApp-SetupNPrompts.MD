@@ -41,3 +41,7 @@ Copy code block as one. This will help the demo go quicker.
       1. Make sure to choose a solution with correct spellings. Copilot will make some interesting suggestions.
 13. ***PRESENTER*** Wrap up the demo with some closing remarks. i.e. "In this demo we can see how Copilot can assist developers in being more productive..."
 14. ***ACTION:*** Move back to slides or next demo.
+
+## Notes
+
+- The sql file is not needed for this demo. It is included to show that Copilot can generate SQL code as well.
