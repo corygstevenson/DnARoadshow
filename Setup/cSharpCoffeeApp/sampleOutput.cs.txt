@@ -1,0 +1,59 @@
+//Write a console app to create a static webpage showing Microsofts committment to coffee using the images in the 'C:\\images' folder.
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.IO;
+
+namespace sampleOutput
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] images = Directory.GetFiles(@"C:\images");
+            string[] imageNames = new string[images.Length];
+            for (int i = 0; i < images.Length; i++)
+            {
+                imageNames[i] = Path.GetFileName(images[i]);
+            }
+            string[] imageTags = new string[imageNames.Length];
+            for (int i = 0; i < imageNames.Length; i++)
+            {
+                imageTags[i] = "<img src=\"images/" + imageNames[i] + "\" />";
+            }
+            string[] imageTagsWithBreaks = new string[imageTags.Length];
+            for (int i = 0; i < imageTags.Length; i++)
+            {
+                imageTagsWithBreaks[i] = imageTags[i] + "<br />";
+            }
+            string[] imageTagsWithBreaksAndParagraphs = new string[imageTagsWithBreaks.Length];
+            for (int i = 0; i < imageTagsWithBreaks.Length; i++)
+            {
+                imageTagsWithBreaksAndParagraphs[i] = "<p>" + imageTagsWithBreaks[i] + "</p>";
+            }
+            string[] imageTagsWithBreaksAndParagraphsAndDivs = new string[imageTagsWithBreaksAndParagraphs.Length];
+            for (int i = 0; i < imageTagsWithBreaksAndParagraphs.Length; i++)
+            {
+                imageTagsWithBreaksAndParagraphsAndDivs[i] = "<div>" + imageTagsWithBreaksAndParagraphs[i] + "</div>";
+            }
+            string[] imageTagsWithBreaksAndParagraphsAndDivsAndBody = new string[imageTagsWithBreaksAndParagraphsAndDivs.Length];
+            for (int i = 0; i < imageTagsWithBreaksAndParagraphsAndDivs.Length; i++)
+            {
+                imageTagsWithBreaksAndParagraphsAndDivsAndBody[i] = "<body>" + imageTagsWithBreaksAndParagraphsAndDivs[i] + "</body>";
+            }
+            string[] imageTagsWithBreaksAndParagraphsAndDivsAndBodyAndHtml = new string[imageTagsWithBreaksAndParagraphsAndDivsAndBody.Length];
+            for (int i = 0; i < imageTagsWithBreaksAndParagraphsAndDivsAndBody.Length; i++)
+            {
+                imageTagsWithBreaksAndParagraphsAndDivsAndBodyAndHtml[i] = "<html>" + imageTagsWithBreaksAndParagraphsAndDivsAndBody[i] + "</html>";
+            }
+            string[] imageTagsWithBreaksAndParagraphsAndDivsAndBodyAndHtmlAndHead = new string[imageTagsWithBreaksAndParagraphsAndDivsAndBodyAndHtml.Length];
+            for (int i = 0; i < imageTagsWithBreaksAndParagraphsAndDivsAndBodyAndHtml.Length; i++)
+            {
+                imageTagsWithBreaksAndParagraphsAndDivsAndBodyAndHtmlAndHead[i] = "<head>" + imageTagsWithBreaksAndParagraphsAndDivsAndBodyAndHtml[i] + "</head>";
+            }
+        }
+    }
+}
